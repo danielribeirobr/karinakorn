@@ -1,0 +1,24 @@
+ul.galeria {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+ul.galeria li {
+	float: left;
+	padding: 3px;
+	padding-left: 10px;
+	display: block;
+	width: auto;
+	border: none;
+}
+
+.thumb_img {
+	border: 1px solid #666;
+	padding: 4px;
+	cursor: pointer;
+}
+
+.thumb_img_active {
+	border: 1px solid #C00;
+}
