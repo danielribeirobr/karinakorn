@@ -29,21 +29,3 @@ require_once('includes/Controller.php');
 // executa o controller
 $module = Controller::loadModule();
 $module->display();
-
-die('daniel');
-
-function print_rr($var, $exit = 1 ) 
-{
-	echo '<pre>';
-	print_r($var);
-	echo '</pre>';
-	if( $exit ) {
-		exit;
-	}
-}
-
-function mylog( $content ) {
-	$fp = fopen('log.txt', 'a+');
-	fwrite( $fp, print_r($content, true) );
-	fclose( $fp );
-}
